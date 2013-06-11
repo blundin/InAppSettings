@@ -101,7 +101,7 @@
         }
         
         //check the localized and un-locatlized values
-        if(![self hasTitle] || [[self valueForKey:InAppSettingsSpecifierTitle] length] == 0){
+        if(![self hasTitle] || [[self valueForKey:InAppSettingsSpecifierTitle] isEqualToString:@""]){
             return NO;
         }
         
