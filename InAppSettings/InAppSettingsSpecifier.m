@@ -101,6 +101,7 @@
         }
         
         //check the localized and un-locatlized values
+        //Xcode 5: Conflict between length for NSString and NSLayoutConstraint, casting to NSString
         if(![self hasTitle] || [[self valueForKey:InAppSettingsSpecifierTitle] isEqualToString:@""]){
             return NO;
         }
